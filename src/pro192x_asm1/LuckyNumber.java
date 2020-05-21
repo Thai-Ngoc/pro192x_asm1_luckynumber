@@ -29,7 +29,7 @@ public class LuckyNumber {
 					System.out.println("You got it right in " + count + " guesses");
 				}
 			} else {
-				System.out.println("Please enter a number");
+				System.out.println("Please enter an integer");
 				input.next();
 			}
 		} while (guess != lucky);
@@ -41,7 +41,7 @@ public class LuckyNumber {
 		System.out.println("Overall result:");
 		System.out.println("Total game = " + totalGame);
 		System.out.println("Total gueses = " + totalGuess);
-		System.out.println("Guesses/game = " + (double)(totalGuess / totalGame));
+		System.out.println("Guesses/game = " + Math.round((totalGuess / (double)totalGame) * 100.0) / 100.0);
 		System.out.println("Best game = " + minGame);	
 	}
 	
